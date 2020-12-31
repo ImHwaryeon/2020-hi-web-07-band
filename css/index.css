@@ -1,0 +1,481 @@
+/* 공통사항 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Pathway+Gothic+One&family=Yantramanav:wght@400;500&display=swap');
+
+/*font-family: 'Lato', sans-serif;
+* font-family: 'Pathway Gothic One', sans-serif;
+* font-family: 'Yantramanav', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    ;
+    font-size: 14px;
+    line-height: 0.95;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mw-100 {
+    max-width: 100%;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2.title {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+}
+
+p.title-sub {
+    color: #888;
+    font-size: 1.1em;
+    padding: 1.5em 0;
+    font-style: oblique;
+}
+
+.bt-black {
+    width: 45%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 0.7em;
+    border: none;
+    transition: all 0.3s;
+    display: block;
+    margin-top: 1em;
+}
+
+.bt-black:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+.bt-red {
+    background-color: rgb(238, 61, 61);
+    color: #fff;
+    width: 70px;
+    padding: 0.3em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.bt-ball {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    width: 1.5em;
+    padding: 0.29em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40em;
+}
+
+.hover-line {
+    border-bottom: 1px solid #666;
+}
+
+/* header-wrapper */
+.header-wrapper {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header-wrapper .navi-wrapper {
+    font-family: 'Yantramanav', sans-serif;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+}
+
+.navi-wrapper .navi-title>a {
+    display: block;
+    padding: 1em;
+    width: 100%;
+}
+
+.navi-wrapper .navi-title:hover>a {
+    color: #333;
+    background-color: #ccc;
+}
+
+.navi-wrapper .navi-title>i.fa-caret-down {
+    font-size: 0.8em;
+    margin-left: .5em;
+}
+
+.navi-wrapper .navi-title>ul {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.navi-wrapper .navi-title>ul.active{
+    opacity: 1;
+}
+.navi-wrapper .navi-title>ul>li {
+    color: #000;
+    padding: 0.7em;
+}
+
+.navi-wrapper .navi-title>ul>li:hover {}
+.header-wrapper .look-wrapper{
+    display: flex;
+    align-items: center;
+}
+.header-wrapper .look-wrapper .plus-wrap{
+    padding: 1em;
+}
+.header-wrapper .bar-wrapper {
+    height: 100%;
+}
+.header-wrapper .bar-wrap {
+    display: none;
+    width: 50px;
+    height: 100%;
+}
+.header-wrapper .bar-wrap:hover{
+    color: #333;
+    background-color: #ccc;
+}
+.header-wrapper .sub-menu{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.header-wrapper .sub-menu >ul{
+    margin-top: 1em;
+}
+.header-wrapper .sub-menu >ul >li{
+    padding: 1.1em 1.6em;
+}
+.header-wrapper .sub-menu >ul >li:hover{
+    color: #333;
+    background-color: #ccc;
+}
+/* main-wrapper */
+.main-wrapper {
+    position: relative;
+}
+.main-wrapper .banner-wrap .slogan-wrap {
+    position: absolute;
+    color: #fff;
+    bottom: 3.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.main-wrapper .banner-wrap .slogan-wrap>h3 {
+    font-size: 1.7em;
+    padding-bottom: 1em;
+}
+
+.main-wrapper .banner-wrap .slogan-wrap>p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* band-wrapper */
+.band-wrapper {
+    padding-top: 5em;
+    text-align: center;
+}
+
+.band-wrapper .band-wrap .content {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.band-wrapper .name-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 3em;
+    margin: 0 5em;
+}
+
+.band-wrapper .name-wrap {
+    flex: 33.3333% 0 0;
+    padding: 0 2% 5% 2%;
+}
+
+.band-wrapper .name-wrap>.text {
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+.band-wrapper .name-wrap>img {
+    height: auto;
+}
+
+.band-wrapper .name-wrap:hover>img {
+    opacity: 0.7;
+}
+
+/* tour-wrapper */
+.tour-wrapper {
+    padding-top: 5em;
+    background-color: #000;
+    padding-bottom: 7em;
+}
+
+.tour-wrapper .title-wrap {
+    text-align: center;
+}
+
+.tour-wrapper .title {
+    color: #fff;
+}
+
+.tour-wrapper .ticket-wrap {
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+.tour-wrapper .ticket-wrap>ul {
+    margin-bottom: 2.5em;
+}
+
+.tour-wrapper .ticket-wrap>ul>li {
+    padding: 0.6em 1em;
+    color: #666;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.tour-wrapper .show-wrap>ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour-wrapper .show-wrap>ul>li {
+    background-color: #fff;
+    width: 32%;
+}
+
+.show-wrap .img-wrap {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.show-wrap .img-wrap>img {
+    transition: all 0.5s;
+}
+
+.show-wrap .img-wrap:hover>img {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+.show-wrap .content-wrap {
+    padding: 1em;
+}
+
+.show-wrap .content-wrap h4 {
+    color: #000;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.show-wrap .content-wrap .day {
+    padding: 1.5em 0;
+    color: #666;
+}
+
+.show-wrap .content-wrap .summary {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* contact-wrapper */
+.contact-wrapper {
+    padding-top: 5em;
+    padding-bottom: 7em;
+}
+
+.contact-wrapper .title-wrap {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.contact-wrapper .info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-wrapper .info-wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.contact-wrapper .info-wrap>span {
+    padding: 0.4em 0;
+}
+
+.contact-wrapper .info-wrap>span>i {
+    margin-right: 1em;
+}
+
+.contact-wrapper .info-wrap>span>i.fa-map-marker {
+    margin-right: 1.3em;
+}
+
+.contact-wrapper .send-wrap {
+    width: 50%;
+}
+
+.contact-wrapper .send-wrap form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-wrapper .send-wrap input {
+    text-align: center;
+    padding: 0.75em;
+    border: 1px solid#888;
+    text-align: left;
+    width: 48%;
+}
+
+.contact-wrapper .send-wrap input#message {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.contact-wrapper .send-wrap button {
+    width: 20%;
+    margin-left: auto;
+}
+
+/* footer */
+.footer-wrapper {
+    text-align: center;
+    padding-bottom: 6.5em;
+    background-color: #f1f1f1;
+}
+
+.footer-wrapper .img-wrap>img {
+    filter: grayscale(50%);
+}
+
+.footer-wrapper .sns-wrap>ul {
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 1.3em;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.footer-wrapper .copyright {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* 반응형 */
+@media screen and (max-width: 575px) {
+    h2.title {
+        margin-top: 2em;
+    }
+    .navi-wrapper .navi-title:not(:first-child){
+        display: none;
+    }
+    .header-wrapper .plus-wrap {
+        display: none;
+    }
+    .header-wrapper .bar-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-wrapper .banner-wrap .slogan-wrap{
+        display: none;
+    }
+    .band-wrapper{
+        padding: 3%;
+    }
+    .tour-wrapper{
+        padding: 0 3% 20% 3%;
+    }
+    .tour-wrapper .ticket-wrap .bt-ball{
+        margin-left: 20em;
+    }
+    .tour-wrapper .show-wrap li{
+        flex: 100% 0 0;
+        margin-bottom: 1em;
+    }
+    .tour-wrapper li button{
+        width: 25%;
+    }
+    .contact-wrapper{
+        padding: 3%;
+        flex: 100% 0 0;
+        padding-bottom: 10em;
+    }
+    .contact-wrapper .send-wrap .bt-black{
+        width: 30%;
+    }
+    .band-wrapper .name-wrap {
+        flex: 100% 0 0;
+        padding: 0 5% 8% 5%;
+    }
+}
